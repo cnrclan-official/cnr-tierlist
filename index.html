@@ -1,0 +1,550 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="theme-color" content="#080d18">
+<meta name="description" content="CNR Clan official Blockman Go PvP tier list. Check rankings and apply for a tier test.">
+<meta property="og:type" content="website"><meta property="og:title" content="CNR Clan | Blockman Go PvP Tier List"><meta property="og:description" content="Official CNR Clan PvP tier list. See where players stand and apply for a tier test.">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='14' fill='%23ff405b'/%3E%3Ctext x='32' y='41' font-family='Arial' font-weight='900' font-size='24' text-anchor='middle' fill='white'%3ECNR%3C/text%3E%3C/svg%3E">
+<title>CNR Clan | Blockman Go PvP Tier List</title>
+<style>
+:root{color-scheme:dark;--bg:#070b14;--panel:#101827;--panel2:#151f31;--line:#26364d;--muted:#a9b8cc;--text:#f4f7ff;--orange:#ff9a3d;--red:#ff405b;--gold:#ffd166;--green:#35e6a1;--purple:#c084fc;--blue:#38bdf8}
+*{box-sizing:border-box}html{scroll-behavior:smooth}
+body{margin:0;background:radial-gradient(ellipse at 12% 0%,#14223a 0,transparent 38%),radial-gradient(ellipse at 90% 15%,#21142d 0,transparent 30%),var(--bg);color:var(--text);font-family:Inter,ui-sans-serif,system-ui,-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif;min-height:100vh}
+button,input,select,textarea{font:inherit}button,a{-webkit-tap-highlight-color:transparent}a{color:inherit;text-decoration:none}
+.wrap{width:min(1120px,calc(100% - 32px));margin:auto}
+.topbar{position:sticky;top:env(safe-area-inset-top,0px);z-index:20;background:rgba(7,11,20,.92);backdrop-filter:blur(10px);border-bottom:1px solid #26364d;box-shadow:0 6px 28px #0006}
+.nav{display:flex;align-items:center;justify-content:space-between;gap:20px;padding:13px 0}
+.brand{display:flex;align-items:center;gap:11px;min-width:0}
+.brandmark{width:42px;height:42px;display:grid;place-items:center;background:linear-gradient(135deg,#ff405b,#ff8a3d);color:#fff;font-weight:950;letter-spacing:-1.5px;font-size:16px;border-radius:10px;box-shadow:0 0 22px #ff405b45}
+.brandname{font-weight:900;letter-spacing:.06em;font-size:15px;color:#f6f8ff}
+.brandsub{color:#9aabc3;font-size:10px;letter-spacing:.12em;text-transform:uppercase;margin-top:3px}
+.navlinks{display:flex;align-items:center;gap:5px}
+.navlinks a,.navlinks button{padding:9px 11px;border-radius:7px;color:#c4d1e4;font-size:12px;font-weight:750;border:1px solid transparent;background:transparent;cursor:pointer}
+.navlinks a:hover,.navlinks button:hover{background:#1a2940;color:#fff;box-shadow:inset 0 0 0 1px #38bdf855}
+.navlinks .yt{background:linear-gradient(110deg,#ff304f,#ff6b45);color:#fff;border-color:#ff405b;box-shadow:0 0 18px #ff405b35}
+.navlinks .dc{background:linear-gradient(110deg,#5865f2,#7a86ff);color:#fff;border-color:#5865f2}
+.hero{padding:48px 0 25px;display:grid;grid-template-columns:1.15fr .85fr;align-items:center;gap:26px}
+.eyebrow{display:inline-flex;align-items:center;gap:8px;border:1px solid #ff405b65;background:#ff405b12;color:#ff9aa9;border-radius:6px;padding:7px 10px;font-size:10px;letter-spacing:.1em;text-transform:uppercase;font-weight:850;box-shadow:0 0 18px #ff405b0d}
+.dot{width:7px;height:7px;background:var(--green);border-radius:50%;box-shadow:0 0 12px #35e6a1}
+.hero h1{font-size:clamp(36px,5.4vw,62px);line-height:1.02;letter-spacing:-.05em;margin:17px 0 13px;font-weight:950;color:#f7f9ff}
+.gradient{background:linear-gradient(90deg,#ff405b,#ff9a3d 65%,#ffd166);-webkit-background-clip:text;background-clip:text;color:transparent}
+.hero p{max-width:570px;color:#b5c3d8;line-height:1.75;font-size:14px}
+.actions{display:flex;gap:9px;flex-wrap:wrap;margin-top:22px}
+.btn{border:1px solid #344963;background:#172338;color:#eaf2ff;padding:10px 14px;border-radius:7px;font-size:12px;font-weight:800;cursor:pointer;transition:.15s;display:inline-block}
+.btn:hover{border-color:#38bdf8;background:#1a2a41;box-shadow:0 0 16px #38bdf81a}
+.btn-primary{background:linear-gradient(105deg,#ff405b,#ff743f);border-color:#ff5360;color:#fff;box-shadow:0 0 22px #ff405b30}
+.btn-primary:hover{background:linear-gradient(105deg,#ff536c,#ff8a50);border-color:#ff7184;box-shadow:0 0 26px #ff405b4a}
+.btn-quiet{background:transparent}
+.btn-danger{border-color:#8c3a45;color:#ffb3bd}
+.btn[disabled]{opacity:.55;cursor:wait}
+.hero-panel,.stat,.card,.tier-row,.admin-item,.modal{background:linear-gradient(145deg,#121d2e,#0e1726);border:1px solid #293b55;box-shadow:0 8px 30px #0002}
+.hero-panel{border-radius:12px;padding:20px}
+.panel-head{display:flex;justify-content:space-between;align-items:center;gap:10px;color:#a9b8cc;font-size:10px;letter-spacing:.1em;text-transform:uppercase;font-weight:850}
+.live{color:#35e6a1;display:flex;align-items:center;gap:6px}
+.hero-score{font-size:32px;font-weight:950;letter-spacing:-.04em;margin:19px 0 4px;color:#fff}
+.hero-small{font-size:11px;color:#a9b8cc;line-height:1.6}
+.mini-bars{display:grid;gap:11px;margin-top:20px}
+.mini-row{display:grid;grid-template-columns:42px 1fr 25px;gap:10px;align-items:center;font-size:11px;font-weight:850}
+.bar{height:6px;background:#26354a;border-radius:99px;overflow:hidden}
+.bar span{display:block;height:100%;border-radius:99px;transition:width .4s}
+.mini-row b{text-align:right;color:#dce8f8}
+.stats{display:grid;grid-template-columns:repeat(4,1fr);gap:11px;margin:15px auto 35px}
+.stat{border-radius:11px;padding:16px;transition:border-color .18s,transform .18s}
+.stat:hover{border-color:#38bdf899;transform:translateY(-2px)}
+.stat strong{font-size:24px;letter-spacing:-.04em;color:#fff}
+.stat div:last-child{font-size:10px;color:#a9b8cc;text-transform:uppercase;letter-spacing:.09em;margin-top:5px}
+.section{padding:15px 0 30px}
+.section-title{display:flex;align-items:end;justify-content:space-between;gap:20px;margin-bottom:16px}
+.kicker{font-size:10px;color:#ff9a68;font-weight:900;text-transform:uppercase;letter-spacing:.16em}
+.section h2{margin:6px 0 0;font-size:24px;letter-spacing:-.035em;color:#f3f6ff}
+.subtext{font-size:12px;color:#a9b8cc;margin-top:7px;line-height:1.65}
+.toolbar{display:flex;gap:8px;flex-wrap:wrap;margin-bottom:14px}
+.field{background:#0b1321;border:1px solid #31445e;border-radius:7px;color:#f3f7ff;padding:10px 11px;outline:none;min-width:0}
+.field::placeholder{color:#8294ad}
+.field:focus{border-color:#38bdf8;box-shadow:0 0 0 3px #38bdf822,0 0 18px #38bdf815}
+.search{flex:1;min-width:180px}.toolbar select{min-width:125px}
+.tier-groups{display:grid;gap:10px}
+.tier-row{display:grid;grid-template-columns:84px 1fr;gap:11px;border-radius:11px;padding:10px;min-height:90px}
+.tier-label{display:flex;flex-direction:column;align-items:center;justify-content:center;border-radius:7px;font-weight:950;font-size:25px;letter-spacing:-.04em}
+.tier-label small{font-size:9px;letter-spacing:.05em;margin-top:4px}
+.tier-S{background:linear-gradient(135deg,#3a1728,#241522);color:#ff718a;border:1px solid #ff405b70;box-shadow:inset 0 0 20px #ff405b0c}
+.tier-A{background:linear-gradient(135deg,#2c1c45,#1d1932);color:#d0a4ff;border:1px solid #a855f770}
+.tier-B{background:linear-gradient(135deg,#12382f,#10261f);color:#55f0b3;border:1px solid #35e6a166}
+.tier-C{background:linear-gradient(135deg,#122f4a,#101f33);color:#65ccff;border:1px solid #38bdf866}
+.tier-U{background:#1a2434;color:#b2bfd2;border:1px solid #3a4a60}
+.players{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:8px}
+.player{display:flex;align-items:center;gap:10px;min-width:0;padding:10px;border:1px solid #2a3b53;border-radius:8px;background:#111d2e;cursor:pointer;text-align:left;color:#f1f6ff;width:100%}
+.player:hover{background:#172840;border-color:#38bdf8;box-shadow:0 0 18px #38bdf812}
+.avatar{width:36px;height:36px;flex:0 0 36px;border-radius:8px;display:grid;place-items:center;background:linear-gradient(145deg,#263952,#172337);border:1px solid #405572;font-size:11px;font-weight:950;color:#f3f7ff}
+.pinfo{min-width:0;flex:1}
+.pname{display:block;font-size:12px;font-weight:850;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+.pmeta{display:block;font-size:10px;color:#a9b8cc;margin-top:4px}
+.p-tier{font-size:9px;font-weight:900;background:#1a2a40;border:1px solid #3a4f6a;padding:5px 6px;border-radius:5px;color:#dce8f8;white-space:nowrap}
+.empty{padding:26px;text-align:center;color:#a9b8cc;border:1px dashed #40536d;border-radius:9px;font-size:13px}
+.guide{display:grid;grid-template-columns:repeat(4,1fr);gap:10px}
+.guide .gcard{border-radius:10px;padding:14px;font-size:11px;line-height:1.6;color:#c4d1e4}
+.guide .gcard b{display:block;font-size:20px;letter-spacing:-.04em;margin-bottom:4px}
+.split{display:grid;grid-template-columns:1fr .8fr;gap:14px}
+.card{border-radius:12px;padding:19px}
+.card h3{font-size:14px;margin:0 0 5px}
+.formgrid{display:grid;grid-template-columns:1fr 1fr;gap:12px}
+.formfield{display:grid;gap:6px}
+.formfield label{font-size:10px;color:#c2cfe1;font-weight:850;text-transform:uppercase;letter-spacing:.08em}
+.formfield .field{width:100%}.formfield.full{grid-column:1/-1}
+.hint{font-size:10px;color:#a9b8cc;line-height:1.6}
+.notice{border:1px solid #8c4a4f;background:#291c20;color:#ffc3c9;padding:11px 12px;border-radius:7px;font-size:11px;line-height:1.6;margin:13px 0}
+.notice.ok{border-color:#2d7d62;background:#10261f;color:#9df2cf}
+.founders{display:grid;gap:0;margin-top:14px}
+.founder{display:flex;justify-content:space-between;gap:12px;padding:12px 0;border-bottom:1px solid #29384d;font-size:11px}
+.founder:last-child{border-bottom:0}.founder span{color:#a9b8cc}.founder b{color:#ffd166}
+.admin{margin:15px 0 32px;border:1px solid #ff405b70;background:linear-gradient(145deg,#241722,#151827);border-radius:11px;padding:18px;box-shadow:0 0 28px #ff405b0b}
+.admin-head{display:flex;align-items:center;justify-content:space-between;gap:12px;flex-wrap:wrap}
+.admin h2{font-size:19px;margin:0;color:#fff}
+.admin-grid{display:grid;grid-template-columns:1fr 1fr;gap:11px;margin-top:16px}
+.admin-item{border-radius:8px;padding:12px;background:#121c2c;border-color:#3a344c}
+.admin-item h4{margin:0 0 10px;font-size:12px}
+.admin-item .field{width:100%;margin:4px 0}
+.admin-actions{display:flex;gap:7px;flex-wrap:wrap;margin-top:9px}
+.status{font-size:10px;color:#ffbd8c;margin-top:8px}
+.rowline{border-top:1px solid #33303a;padding:10px 0}
+.hidden{display:none!important}
+.footer{border-top:1px solid #26364d;padding:22px 0 30px;color:#9eafc7;font-size:10px;background:#080d17}
+.footer-inner{display:flex;justify-content:space-between;gap:15px;flex-wrap:wrap}
+.toast{position:fixed;z-index:50;right:calc(16px + env(safe-area-inset-right,0px));bottom:calc(16px + env(safe-area-inset-bottom,0px));max-width:min(380px,calc(100% - 32px));background:#111d2e;border:1px solid #3b506d;color:#fff;padding:13px 16px;border-radius:8px;box-shadow:0 12px 40px #0008;font-size:12px}
+.toast.error{border-color:#ff405b}
+.pill{display:inline-block;padding:5px 8px;border-radius:5px;font-size:9px;font-weight:900;letter-spacing:.07em;text-transform:uppercase;background:#243149;color:#d0dcee}
+.modal-backdrop{position:fixed;inset:0;background:#020611d9;backdrop-filter:blur(7px);z-index:40;display:grid;place-items:center;padding:16px}
+.modal{width:min(450px,100%);border-radius:12px;padding:21px;border-color:#3a4f6c;box-shadow:0 15px 45px #0006}
+.modal h3{margin:0 0 7px}.modal p{color:#a9b8cc;font-size:12px;line-height:1.6}
+.modal .field{width:100%;margin:8px 0}
+.close-row{display:flex;justify-content:flex-end;gap:8px;margin-top:10px}
+.steps{display:grid;grid-template-columns:repeat(4,1fr);gap:10px}
+.step{border-radius:11px;padding:16px;background:linear-gradient(145deg,#121d2e,#0e1726);border:1px solid #293b55}
+.step .num{width:28px;height:28px;border-radius:8px;display:grid;place-items:center;background:linear-gradient(135deg,#ff405b,#ff8a3d);font-size:12px;font-weight:950;color:#fff;margin-bottom:10px}
+.step b{display:block;font-size:13px;margin-bottom:5px}.step span{font-size:11px;color:#a9b8cc;line-height:1.65}
+details.faq{border:1px solid #293b55;border-radius:10px;background:#0e1726;margin-bottom:8px}
+details.faq summary{cursor:pointer;padding:14px 16px;font-size:13px;font-weight:800;list-style:none}
+details.faq summary::-webkit-details-marker{display:none}
+details.faq summary:after{content:"+";float:right;color:#ff9a68}
+details.faq[open] summary:after{content:"\2013"}
+details.faq p{margin:0;padding:0 16px 14px;color:#a9b8cc;font-size:12px;line-height:1.7}
+.check{display:flex;gap:9px;align-items:flex-start;font-size:11px;color:#c4d1e4;line-height:1.6}.check input{margin-top:3px;accent-color:#ff405b}
+textarea.field{resize:vertical;min-height:84px}
+@media(max-width:760px){.steps{grid-template-columns:repeat(2,1fr)}}
+@media(max-width:420px){.steps{grid-template-columns:1fr}}
+.sr{position:absolute;left:-9999px}
+.badges{display:flex;gap:6px;flex-wrap:wrap;margin-top:12px}
+.bdg{font-size:10px;font-weight:850;padding:5px 9px;border-radius:999px;border:1px solid #3a4f6a;background:#1a2a40;color:#dce8f8}
+.bdg.v{border-color:#2d7d62;background:#10261f;color:#7ff0c4}.bdg.t{border-color:#8a6d1f;background:#2a2210;color:#ffd166}
+.vt{color:#35e6a1;font-weight:900}
+.upd{display:flex;align-items:center;gap:12px;padding:12px 0;border-bottom:1px solid #29384d;font-size:12px}.upd:last-child{border-bottom:0}
+.upd .udot{width:9px;height:9px;border-radius:50%;flex:0 0 9px;background:#38bdf8;box-shadow:0 0 10px #38bdf8}
+.upd span.txt{flex:1;min-width:0;line-height:1.5}.upd small{display:block;color:#a9b8cc;font-size:10px;margin-top:2px}
+.badgepick{display:flex;gap:6px 12px;flex-wrap:wrap;margin:6px 0}.badgepick label{font-size:11px;color:#c4d1e4;display:flex;gap:6px;align-items:center;cursor:pointer}
+.twocol{display:grid;grid-template-columns:1fr 1fr;gap:8px}
+.chips{display:flex;gap:8px;flex-wrap:wrap;margin-bottom:12px}
+.chip{border:1px solid #344963;background:#172338;color:#c4d1e4;border-radius:999px;padding:7px 13px;font-size:11px;font-weight:850;cursor:pointer;transition:.15s}
+.chip:hover{border-color:#38bdf8;color:#fff}.chip.on{background:linear-gradient(105deg,#ff405b,#ff743f);border-color:#ff5360;color:#fff}
+.chip i{font-style:normal;opacity:.75;margin-left:5px;font-weight:700}
+.rules{margin:0;padding-left:18px;font-size:13px;line-height:1.95;color:#c4d1e4}
+.totop{position:fixed;left:calc(16px + env(safe-area-inset-left,0px));bottom:calc(16px + env(safe-area-inset-bottom,0px));z-index:30;width:40px;height:40px;border-radius:10px;border:1px solid #344963;background:#172338;color:#fff;cursor:pointer;font-size:16px;box-shadow:0 6px 20px #0006}
+.totop:hover{border-color:#38bdf8}
+.footer-links{display:flex;gap:16px;flex-wrap:wrap;margin-bottom:14px;font-size:11px;font-weight:700}.footer-links a:hover{color:#fff}
+@media(max-width:760px){.nav{align-items:flex-start}.navlinks{gap:2px;flex-wrap:wrap;justify-content:flex-end}.navlinks a,.navlinks button{padding:8px 7px;font-size:10px}.hero{grid-template-columns:1fr;padding-top:30px}.stats{grid-template-columns:repeat(2,1fr)}.split{grid-template-columns:1fr}.players{grid-template-columns:1fr}.tier-row{grid-template-columns:72px 1fr;padding:8px}.tier-label{font-size:22px}.admin-grid{grid-template-columns:1fr}.section-title{align-items:flex-start;flex-direction:column}.brandname{font-size:13px}.brandsub{font-size:9px}.guide{grid-template-columns:repeat(2,1fr)}}
+@media(max-width:420px){.wrap{width:calc(100% - 22px)}.nav{gap:8px}.brand{gap:8px}.brandmark{width:36px;height:36px}.navlinks a:not(.yt):not(.dc){display:none}.hero h1{font-size:39px}.formgrid{grid-template-columns:1fr}.formfield.full{grid-column:auto}.stats{gap:8px}.stat{padding:13px}.stat strong{font-size:22px}}
+@media(prefers-reduced-motion:no-preference){.hero-panel,.section,.stats{animation:panelIn .55s ease-out both}@keyframes panelIn{from{opacity:.65;transform:translateY(7px)}to{opacity:1;transform:translateY(0)}}}
+</style>
+</head>
+<body>
+<header class="topbar">
+  <div class="wrap nav">
+    <a class="brand" href="#home" aria-label="CNR Clan home">
+      <div class="brandmark">CNR</div><div><div class="brandname">CNR CLAN</div><div class="brandsub">Official tier list</div></div>
+    </a>
+    <nav class="navlinks" aria-label="Main navigation">
+      <a href="#rankings">Rankings</a><a href="#tiers">Tiers</a><a href="#apply">Apply</a><a href="#faq">FAQ</a><a href="#clan">Clan</a>
+      <a class="yt" id="ytLink" href="#" target="_blank" rel="noopener noreferrer">▶ YouTube</a>
+      <button id="adminOpen" type="button">Admin</button>
+    </nav>
+  </div>
+</header>
+
+<noscript><div class="wrap" style="padding:20px 0;color:#ffc3c9">This site needs JavaScript turned on to show the rankings.</div></noscript>
+<main class="wrap" id="home">
+  <section class="hero">
+    <div>
+      <span class="eyebrow"><span class="dot"></span> Competitive roster • Community hub</span>
+      <h1>PROVE YOUR<br><span class="gradient">PLACE.</span></h1>
+      <p>The CNR Clan official Blockman Go PvP tier list. Check player rankings, apply for a PvP tier test, and watch RetiredPlayerBG for tier-list PvP examples.</p>
+      <div class="actions"><a class="btn btn-primary" href="#rankings">View PvP rankings</a><a class="btn btn-quiet" href="#apply">Apply for a test</a><a class="btn" id="ytLink2" href="#" target="_blank" rel="noopener noreferrer">Watch RetiredPlayerBG ↗</a></div>
+    </div>
+    <aside class="hero-panel">
+      <div class="panel-head"><span>Blockman Go · PvP</span><span class="live"><span class="dot"></span> Live roster</span></div>
+      <div class="hero-score" id="heroCount">06 <span style="font-size:14px;color:#929bad;font-weight:700">players</span></div>
+      <div class="hero-small" id="heroNote">Rankings are reviewed by authorized CNR testers before publication.</div>
+      <div class="mini-bars">
+        <div class="mini-row"><span style="color:#ff6e6e">HT</span><div class="bar"><span id="barS" style="width:0;background:#f04444"></span></div><b id="countS">0</b></div>
+        <div class="mini-row"><span style="color:#c8a4ff">AT</span><div class="bar"><span id="barA" style="width:0;background:#b78cff"></span></div><b id="countA">0</b></div>
+        <div class="mini-row"><span style="color:#65e6b0">MT</span><div class="bar"><span id="barB" style="width:0;background:#39d98a"></span></div><b id="countB">0</b></div>
+        <div class="mini-row"><span style="color:#7fc7ff">LT</span><div class="bar"><span id="barC" style="width:0;background:#68b7ff"></span></div><b id="countC">0</b></div>
+      </div>
+    </aside>
+  </section>
+
+  <section class="stats" aria-label="Roster summary">
+    <div class="stat"><strong id="statPlayers">0</strong><div>Published players</div></div>
+    <div class="stat"><strong id="statDivisions">0</strong><div>Divisions</div></div>
+    <div class="stat"><strong>4</strong><div>Tier levels</div></div>
+    <div class="stat"><strong>24/7</strong><div>Roster access</div></div>
+  </section>
+
+
+  <section class="section" id="rankings">
+    <div class="section-title"><div><div class="kicker">Official roster</div><h2>Player tier list</h2><div class="subtext">Search by player name, game ID or device. Only published rankings appear here.</div></div><span class="pill" id="updatedPill">Public view</span></div>
+    <div class="chips" id="tierChips" role="group" aria-label="Filter by tier"></div>
+    <div class="toolbar">
+      <input class="field search" id="searchBar" type="search" placeholder="Search IGN, game ID or device…" aria-label="Search players">
+      <select class="field" id="divisionFilter" aria-label="Filter by division"><option value="all">All divisions</option><option value="1">Division 1</option><option value="2">Division 2</option><option value="3">Division 3</option></select>
+      <input type="hidden" id="tierFilter" value="all">
+      <select class="field" id="sortFilter" aria-label="Sort players"><option value="tier">Sort: Tier</option><option value="name">Sort: Name</option><option value="division">Sort: Division</option></select>
+    </div>
+    <div id="tierGroups" class="tier-groups"></div>
+  </section>
+
+  <section class="section" id="updates">
+    <div class="section-title"><div><div class="kicker">Recent activity</div><h2>Latest updates</h2><div class="subtext">New placements and tier changes, newest first.</div></div></div>
+    <div class="card"><div id="updatesList"></div></div>
+  </section>
+
+  <section class="section" id="tiers">
+    <div class="section-title"><div><div class="kicker">How ranking works</div><h2>Tier guide</h2><div class="subtext">What each tier means. Testers place players based on these standards.</div></div></div>
+    <div class="guide" id="tierGuide"></div>
+  </section>
+
+  <section class="section" id="process">
+    <div class="section-title"><div><div class="kicker">The path to a rank</div><h2>How testing works</h2><div class="subtext">Four steps from application to a published ranking.</div></div></div>
+    <div class="steps">
+      <div class="step"><div class="num">1</div><b>Apply</b><span>Send your IGN, game ID, device and PvP experience.</span></div>
+      <div class="step"><div class="num">2</div><b>Review</b><span>A tester checks your details to confirm you are ready for a test.</span></div>
+      <div class="step"><div class="num">3</div><b>Tier test</b><span>Staff arrange your test matches against ranked players.</span></div>
+      <div class="step"><div class="num">4</div><b>Get placed</b><span>Your result is published on the roster with your tier.</span></div>
+    </div>
+  </section>
+
+  <section class="section" id="apply">
+    <div class="section-title"><div><div class="kicker">Your next step</div><h2>Player application</h2><div class="subtext">Submit your player details for review by the clan's authorized testers.</div></div></div>
+    <div class="card" id="contactCard" style="margin-bottom:14px">
+      <div class="kicker">Apply in the game</div><h3 style="margin-top:8px">Message <span id="ctName"></span> in Blockman Go</h3>
+      <p class="subtext">You can also apply or ask a question directly in the game with the tester head.</p>
+      <div class="founders">
+        <div class="founder"><span>In-game name</span><b id="ctIgn"></b></div>
+        <div class="founder"><span>Account ID</span><b><span id="ctId"></span><button class="btn" id="ctCopy" type="button" style="padding:5px 9px;margin-left:10px">Copy ID</button></b></div>
+      </div>
+      <h4 style="margin:16px 0 4px;font-size:13px">Send these details in your message</h4>
+      <ul class="rules">
+        <li>Your in-game name (IGN)</li>
+        <li>Your in-game ID</li>
+        <li>Preferred division (1, 2 or 3)</li>
+        <li>Your device (Android, iOS or PC)</li>
+        <li>Your PvP experience (how long you have played)</li>
+        <li>Your achievements and playstyle</li>
+      </ul>
+      <h4 style="margin:16px 0 4px;font-size:13px">How to apply</h4>
+      <ol class="rules">
+        <li>Open Blockman Go and search for the account ID above to find the account.</li>
+        <li>Send a friend request with a message that includes all the details listed.</li>
+        <li>Wait for a tester to reply and schedule your tier test. Your tier is decided only after the test.</li>
+      </ol>
+      <div class="notice ok" style="margin-bottom:0"><b>Beware of imitators:</b> only this account ID handles applications. Nobody from CNR will ask for your password or payment.</div>
+    </div>
+    <div class="split" id="applySplit">
+      <div class="card" id="appCard">
+        <h3>Apply for a tier test</h3><p class="subtext" id="appIntro" style="margin-bottom:18px">All fields are required. Accurate details help testers review you faster.</p>
+        <div id="applyLinkBox" class="hidden"><p class="subtext" style="margin-bottom:14px">Applications open in a separate form. Fill it in and the CNR testers will review it. Your tier is decided by the tester team, never automatically.</p><a class="btn btn-primary" id="applyLink" target="_blank" rel="noopener noreferrer" href="#">Open application form ↗</a></div>
+        <form id="appForm">
+          <div class="formgrid">
+            <div class="formfield"><label for="ign">In-game name (IGN) *</label><input class="field" id="ign" name="ign" maxlength="32" required placeholder="Your player name"></div>
+            <div class="formfield"><label for="gameId">In-game ID *</label><input class="field" id="gameId" name="gameId" maxlength="40" required placeholder="Your game ID"></div>
+            <div class="formfield"><label for="division">Preferred division *</label><select class="field" id="division" name="division" required><option value="1">Division 1</option><option value="2">Division 2</option><option value="3">Division 3</option></select></div>
+            <div class="formfield"><label for="device">Device *</label><select class="field" id="device" name="device" required><option>Android</option><option>iOS</option><option>PC</option></select></div>
+            <div class="formfield full"><label for="experience">PvP experience *</label><select class="field" id="experience" name="experience" required><option>Less than 6 months</option><option>6–12 months</option><option>1–2 years</option><option>2+ years</option></select></div>
+            <div class="formfield full"><label for="achievements">PvP achievements &amp; playstyle *</label><textarea class="field" id="achievements" name="achievements" maxlength="400" minlength="10" required placeholder="Previous tier lists, tournaments, clans, or what you are best at"></textarea></div>
+            <div class="formfield full"><label class="check" style="text-transform:none;letter-spacing:0;font-weight:500"><input type="checkbox" id="agree" required><span>I confirm my details are accurate, the account is my own, and I will follow the testing rules (no hacks, exploits or alt-account boosting).</span></label></div>
+            <div class="sr" aria-hidden="true"><label>Leave empty<input id="hp" name="website" tabindex="-1" autocomplete="off"></label></div>
+            <div class="formfield full"><button class="btn btn-primary" id="appSubmit" type="submit">Submit application ↗</button></div>
+          </div>
+        </form>
+        <div class="notice ok"><b>Your safety:</b> CNR staff will never ask for your password, login code, payment, or in-game items. Only fill in the details requested above.</div>
+        <div class="notice" id="appNotice"></div>
+      </div>
+      <aside class="card" id="clan">
+        <div class="kicker">The people behind CNR</div><h3 style="margin-top:8px">Clan operations</h3><p class="subtext">Division leadership and tester credits.</p>
+        <div class="founders" id="founders"></div>
+        <div class="notice">Rankings are based on agreed testing criteria and reviewed by authorized staff before publication.</div>
+      </aside>
+    </div>
+  </section>
+
+  <section class="section" id="rules">
+    <div class="section-title"><div><div class="kicker">Fair play</div><h2>Rules &amp; code of conduct</h2><div class="subtext">Every ranked player agrees to these standards.</div></div></div>
+    <div class="card"><ul class="rules" id="rulesList"></ul></div>
+  </section>
+
+  <section class="section" id="faq">
+    <div class="section-title"><div><div class="kicker">Questions</div><h2>FAQ</h2></div></div>
+    <div id="faqList"></div>
+  </section>
+
+  <section id="adminPanel" class="admin hidden">
+    <div class="admin-head"><div><div class="kicker">Staff only</div><h2>Admin & tester workspace</h2></div><div class="admin-actions" style="margin:0"><button class="btn" id="adminLock">Lock</button><button class="btn" id="adminClose">Close panel</button></div></div>
+    <div class="notice"><b>Heads up:</b> the passcode only hides these controls in the browser. It is not real security, because anyone can read a page's source. Edits here stay on <b>this browser</b> until you export the roster and upload it as <b>roster.json</b> next to this page. Never put private data in here.</div>
+    <div class="admin-grid">
+      <div class="admin-item"><h4>Review applications</h4><div class="hint">Applications are private: only you see this list, and applicants never see their status here. Every new application starts as Pending until you test them and place a tier. This list lives in this browser, so keep your form's own inbox as the master copy.</div>
+        <div class="hint" id="appCounts" style="margin-top:8px;font-weight:700"></div>
+        <form id="manualAppForm" style="margin:10px 0">
+          <div class="twocol"><input class="field" id="maIgn" maxlength="32" required placeholder="Applicant IGN"><input class="field" id="maId" maxlength="40" required placeholder="Game ID"></div>
+          <div class="twocol"><select class="field" id="maDiv" aria-label="Division"><option value="1">Division 1</option><option value="2">Division 2</option><option value="3">Division 3</option></select><select class="field" id="maDev" aria-label="Device"><option>Android</option><option>iOS</option><option>PC</option></select></div>
+          <input class="field" id="maNote" maxlength="200" placeholder="Notes (where they applied, experience, anything useful)">
+          <div class="admin-actions"><button class="btn btn-primary" type="submit">Add as Pending</button></div>
+        </form><div id="applicationsList" style="margin-top:10px"></div></div>
+      <div class="admin-item"><h4>Add / update a published player</h4>
+        <form id="playerForm">
+          <input class="field" id="adminIgn" required maxlength="32" placeholder="Player IGN">
+          <input class="field" id="adminId" required maxlength="40" placeholder="Game ID">
+          <select class="field" id="adminDivision"><option value="1">Division 1</option><option value="2">Division 2</option><option value="3">Division 3</option></select>
+          <select class="field" id="adminTier"><option value="S">High Tier (HT)</option><option value="A">Average Tier (AT)</option><option value="B">Mid Tier (MT)</option><option value="C">Low Tier (LT)</option><option value="U">Unranked</option></select>
+          <input class="field" id="adminDevice" placeholder="Device (e.g. Android)" value="Android">
+          <input class="field" id="adminTester" maxlength="32" placeholder="Tested by (tester name)">
+          <div class="twocol"><input class="field" id="adminWins" type="number" min="0" max="999" placeholder="Test wins"><input class="field" id="adminTotal" type="number" min="0" max="999" placeholder="Test matches played"></div>
+          <input class="field" id="adminDate" type="date" aria-label="Test date">
+          <select class="field" id="adminPrev" aria-label="Previous tier"><option value="">Previous tier: none (new placement)</option><option value="S">Previous: High Tier</option><option value="A">Previous: Average Tier</option><option value="B">Previous: Mid Tier</option><option value="C">Previous: Low Tier</option></select>
+          <div class="hint" style="margin-top:6px">Badges</div>
+          <div class="badgepick" id="adminBadges"><label><input type="checkbox" value="Verified"> Verified</label><label><input type="checkbox" value="Tournament Winner"> Tournament Winner</label><label><input type="checkbox" value="Division Founder"> Division Founder</label><label><input type="checkbox" value="Undefeated Test"> Undefeated Test</label></div>
+          <div class="admin-actions"><button class="btn btn-primary" type="submit">Save player</button></div>
+        </form>
+      </div>
+    </div>
+    <div class="admin-item" style="margin-top:12px"><h4>Publish roster</h4>
+      <div class="hint" id="rosterSource"></div>
+      <div class="admin-actions">
+        <button class="btn btn-primary" id="exportRoster" type="button">Export roster.json</button>
+        <button class="btn" id="importRosterBtn" type="button">Import roster.json</button>
+        <button class="btn btn-danger" id="resetLocal" type="button">Discard my local edits</button>
+        <input type="file" id="importRoster" accept="application/json,.json" class="hidden">
+      </div>
+      <textarea class="field hidden" id="exportBox" readonly rows="8" aria-label="Roster JSON" style="margin-top:10px;font-family:monospace;font-size:11px"></textarea><button class="btn hidden" id="copyRoster" type="button" style="margin-top:8px">Copy roster JSON</button>
+      <div class="status">Upload the exported file to your site as <b>roster.json</b> (same folder as this page) and every visitor sees the new rankings.</div>
+    </div>
+    <div class="admin-item" style="margin-top:12px"><h4>Current player records</h4><div id="adminPlayers"></div></div>
+  </section>
+</main>
+<footer class="footer"><div class="wrap footer-links"><a href="#rankings">Rankings</a><a href="#updates">Updates</a><a href="#tiers">Tier guide</a><a href="#process">How it works</a><a href="#rules">Rules</a><a href="#apply">Apply</a><a href="#faq">FAQ</a></div><div class="wrap footer-inner"><span>© <span id="year"></span> CNR CLAN • OFFICIAL TIER LIST</span><span>Made by Pubg · Tier Tester Head</span><span>Fan-made community tier list · Not affiliated with or endorsed by the Blockman Go publisher</span></div></footer>
+<button id="toTop" class="totop hidden" type="button" aria-label="Back to top">↑</button>
+<div id="toast" class="toast hidden" role="status" aria-live="polite"></div>
+
+<div id="playerModal" class="modal-backdrop hidden" role="dialog" aria-modal="true" aria-labelledby="modalTitle"><div class="modal"><h3 id="modalTitle">Player profile</h3><div id="modalContent"></div><div class="close-row"><button class="btn" id="modalCopy" type="button">Copy profile link</button><button class="btn" id="modalClose">Close</button></div></div></div>
+
+<div id="authModal" class="modal-backdrop hidden" role="dialog" aria-modal="true" aria-labelledby="authTitle"><div class="modal"><h3 id="authTitle">Staff access</h3><p>Enter the staff passcode to open the admin workspace.</p>
+<form id="authForm"><input class="field" id="authPass" type="password" autocomplete="current-password" placeholder="Passcode" required><div class="close-row"><button class="btn" type="button" id="authCancel">Cancel</button><button class="btn btn-primary" type="submit">Unlock</button></div></form></div></div>
+
+<script>
+/* ============ EDIT THIS SECTION ============ */
+const CONFIG = {
+  youtube: "https://www.youtube.com/@RetiredPlayerBG",
+  applyUrl: "",              // paste your Google Form link here: players open it to apply and the answers go to you
+  contact: { role: "Tier Tester Head", ign: "Pubg", id: "4206558960" },   // shown in the "Apply in the game" card
+  lastUpdated: "October 15, 2026",   // shown next to the roster; update it whenever you publish changes
+  applyEndpoint: "",        // e.g. a Formspree URL "https://formspree.io/f/xxxxxxx" (empty = saves on this browser only)
+  // SHA-256 of the staff passcode (hash only, the passcode itself is not stored here)
+  adminHash: "23f6075ce54fb71dd4e614c984278e16800cd227500df590d0ce1fd2ddb6614d",
+  founders: [
+    ["Division 1 Founder", "Aizen"],
+    ["Division 2 Founder", "Manh"],
+    ["Division 3 Founder", "Manh"],
+    ["Tier Tester Head", "Pubg"]
+  ],
+  tierCriteria: {
+    S: "Elite. Consistently beats strong opponents and sets the standard.",
+    A: "Advanced. Wins most fights against high-level opponents.",
+    B: "Skilled. Solid fundamentals and reliable in competitive matches.",
+    C: "Developing. Learning the meta and improving quickly."
+  },
+  rules: [
+    "One account per player. Alt accounts and account sharing are not allowed.",
+    "No hacks, mods, exploits or macros during tests.",
+    "Play on your own account. Boosting or having someone test for you leads to removal.",
+    "Respect testers and other players. Harassment or toxicity can lead to removal.",
+    "Tester decisions are final once published. Retests follow staff rules."
+  ],
+  faq: [
+    ["How do I apply?","Use the application form on this page, or add the Tier Tester Head in Blockman Go (see the Apply in the game card) and send your details."],
+    ["What do I need to apply?","Your in-game name and ID, your device, your PvP experience, and a short description of your achievements and playstyle."],
+    ["How long does review take?","Testers review applications in the order received. Approved players are placed on the roster once tested."],
+    ["Who decides my tier?","Authorized CNR testers place players using the standards in the tier guide. Players inside a tier are listed alphabetically."],
+    ["Can I be removed or demoted?","Yes. Cheating, exploits, alt-account boosting or false information can lead to rejection or removal from the roster."],
+    ["What do you do with my details?","Your in-game name, game ID, device and experience are used to review your tier test application. We never ask for passwords, payments or in-game items."],
+    ["Can I retest to move up?","Ask a tester. Retest rules are set by the tester team."]
+  ]
+};
+/* ============================================ */
+
+const STORAGE_KEY = "cnr_tierlist_demo_v1";
+const APP_KEY = "cnr_applications_demo_v1";
+const SESSION_KEY = "cnr_admin_unlocked";
+const initialPlayers = [];   // empty on purpose: the roster comes from roster.json
+const tierOrder={S:0,A:1,B:2,C:3,U:4};
+const tierNames={S:"High Tier",A:"Average Tier",B:"Mid Tier",C:"Low Tier",U:"Unranked"};
+const tierShort={S:"HT",A:"AT",B:"MT",C:"LT",U:"Unranked"};
+const BADGES=["Verified","Tournament Winner","Division Founder","Undefeated Test"];
+const mapP=p=>({ign:p.ign,gameId:p.gameId,division:String(p.division),device:p.device||"Not specified",tier:p.tier,published:p.published!==false,tester:String(p.tester||"").slice(0,32),wins:Math.max(0,parseInt(p.wins,10)||0),total:Math.max(0,parseInt(p.total,10)||0),testedOn:/^\d{4}-\d{2}-\d{2}$/.test(p.testedOn||"")?p.testedOn:"",prevTier:["S","A","B","C"].includes(p.prevTier)?p.prevTier:"",badges:Array.isArray(p.badges)?p.badges.filter(b=>BADGES.includes(b)):[]});
+function fmtDate(d){const t=new Date(d+"T00:00:00");return isNaN(t)?d:t.toLocaleDateString(undefined,{year:"numeric",month:"short",day:"numeric"})}
+function extrasHTML(p){let h="";if(p.total)h+=`<p>Tier test result: <b>Won ${p.wins} of ${p.total}</b></p>`;if(p.tester)h+=`<p>Tested by: <b>${escapeHTML(p.tester)}</b></p>`;if(p.testedOn)h+=`<p>Placed on: <b>${escapeHTML(fmtDate(p.testedOn))}</b></p>`;if(p.prevTier&&p.prevTier!==p.tier)h+=`<p>Moved from: <b>${escapeHTML(tierNames[p.prevTier])}</b></p>`;if(p.badges&&p.badges.length)h+=`<div class="badges">${p.badges.map(b=>`<span class="bdg${b==="Verified"?" v":b==="Tournament Winner"?" t":""}">${escapeHTML(b)}</span>`).join("")}</div>`;return h}
+function renderUpdates(){const el=$("updatesList");const list=players.filter(p=>p.published!==false&&p.testedOn).slice().sort((a,b)=>b.testedOn.localeCompare(a.testedOn)||a.ign.localeCompare(b.ign)).slice(0,6);el.innerHTML=list.length?list.map(p=>{const moved=p.prevTier&&p.prevTier!==p.tier;return `<div class="upd"><span class="udot"></span><span class="txt"><b>${escapeHTML(p.ign)}</b> ${moved?"moved from "+escapeHTML(tierNames[p.prevTier])+" to "+escapeHTML(tierNames[p.tier]):"was placed in "+escapeHTML(tierNames[p.tier])}<small>${escapeHTML(fmtDate(p.testedOn))}${p.tester?" · tested by "+escapeHTML(p.tester):""}</small></span><span class="p-tier">${escapeHTML(tierShort[p.tier])}</span></div>`}).join(""):'<div class="empty">Updates will appear here when players are placed or change tiers.</div>'}
+function readExtra(){return{tester:$("adminTester").value.trim(),wins:Math.max(0,parseInt($("adminWins").value,10)||0),total:Math.max(0,parseInt($("adminTotal").value,10)||0),testedOn:$("adminDate").value||"",prevTier:$("adminPrev").value,badges:Array.from(document.querySelectorAll("#adminBadges input:checked")).map(i=>i.value)}}
+const tierDescriptions={S:"Elite",A:"Advanced",B:"Skilled",C:"Developing",U:"Not yet ranked"};
+const clone=o=>JSON.parse(JSON.stringify(o));
+const $=id=>document.getElementById(id);
+let hasLocal=false,rosterFrom="built-in sample roster";
+let players=(function(){try{const v=localStorage.getItem(STORAGE_KEY);if(v){hasLocal=true;return JSON.parse(v)}}catch(e){}return clone(initialPlayers)})();
+let applications=(function(){try{const v=localStorage.getItem(APP_KEY);return v?JSON.parse(v):[]}catch(e){return[]}})();
+if(hasLocal)rosterFrom="your local edits on this browser";
+
+function save(){try{localStorage.setItem(STORAGE_KEY,JSON.stringify(players));localStorage.setItem(APP_KEY,JSON.stringify(applications));hasLocal=true;rosterFrom="your local edits on this browser"}catch(e){notify("Could not save in this browser. Storage may be disabled.",true)}}
+function escapeHTML(s){return String(s??"").replace(/[&<>"']/g,c=>({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;","'":"&#39;"}[c]))}
+function safeUrl(u){try{const x=new URL(u);return(x.protocol==="https:"||x.protocol==="http:")?x.href:""}catch(e){return""}}
+function initials(name){return String(name||"?").trim().split(/\s+/).slice(0,2).map(x=>x[0]||"").join("").toUpperCase()}
+function notify(msg,error=false){const el=$("toast");el.textContent=msg;el.classList.remove("hidden","error");if(error)el.classList.add("error");clearTimeout(window.toastTimer);window.toastTimer=setTimeout(()=>el.classList.add("hidden"),3800)}
+function twoStep(btn,label){if(btn.dataset.armed==="1"){btn.dataset.armed="";return true}const old=btn.textContent;btn.dataset.armed="1";btn.textContent=label;setTimeout(()=>{btn.dataset.armed="";btn.textContent=old},4000);return false}
+function validPlayer(p){return p&&typeof p.ign==="string"&&typeof p.gameId==="string"&&p.tier in tierOrder&&["1","2","3"].includes(String(p.division))}
+
+/* ---- config wiring ---- */
+(function(){
+  const yt=safeUrl(CONFIG.youtube);if(yt){$("ytLink").href=yt;$("ytLink2").href=yt}else{$("ytLink").classList.add("hidden");$("ytLink2").classList.add("hidden")}
+  $("founders").innerHTML=CONFIG.founders.map(f=>`<div class="founder"><span>${escapeHTML(f[0])}</span><b>${escapeHTML(f[1])}</b></div>`).join("");
+  $("tierGuide").innerHTML=["S","A","B","C"].map(t=>`<div class="gcard tier-${t}"><b>${escapeHTML(tierNames[t])} (${tierShort[t]})</b>${escapeHTML(CONFIG.tierCriteria[t]||"")}</div>`).join("");
+  $("rulesList").innerHTML=(CONFIG.rules||[]).map(r=>`<li>${escapeHTML(r)}</li>`).join("");
+  if(CONFIG.lastUpdated)$("updatedPill").textContent="Updated "+CONFIG.lastUpdated;
+  $("faqList").innerHTML=CONFIG.faq.map(f=>`<details class="faq"><summary>${escapeHTML(f[0])}</summary><p>${escapeHTML(f[1])}</p></details>`).join("");
+  (function(){const c=CONFIG.contact||{},card=$("contactCard");if(!c.id||!c.ign){card.classList.add("hidden");return}$("ctName").textContent=c.ign;$("ctIgn").textContent=c.ign+(c.role?" ("+c.role+")":"");$("ctId").textContent=c.id;$("ctCopy").addEventListener("click",()=>{(navigator.clipboard?navigator.clipboard.writeText(c.id):Promise.reject()).then(()=>notify("Account ID copied."),()=>notify("Copy failed. Account ID: "+c.id,true))})})();
+  const au=safeUrl(CONFIG.applyUrl),canSubmit=!!(au||CONFIG.applyEndpoint);
+  if(au){$("applyLink").href=au;$("applyLinkBox").classList.remove("hidden");$("appForm").classList.add("hidden")}
+  else if(!canSubmit){$("appCard").classList.add("hidden");$("applySplit").style.gridTemplateColumns="1fr"}
+  const n=$("appNotice");
+  if(canSubmit){n.className="notice ok";n.textContent="Your application goes privately to the clan owner. After you apply, wait for a tester to contact you. Your tier is decided only after your test."}
+  else n.classList.add("hidden");
+})();
+
+/* ---- rankings ---- */
+const byRank=(a,b)=>tierOrder[a.tier]-tierOrder[b.tier]||a.ign.localeCompare(b.ign);
+function filteredPlayers(){const q=$("searchBar").value.trim().toLowerCase(),d=$("divisionFilter").value,t=$("tierFilter").value,s=$("sortFilter").value;let list=players.filter(p=>p.published!==false&&(!q||p.ign.toLowerCase().includes(q)||p.gameId.toLowerCase().includes(q)||String(p.device||"").toLowerCase().includes(q))&&(d==="all"||String(p.division)===d)&&(t==="all"||p.tier===t));list.sort((a,b)=>s==="name"?a.ign.localeCompare(b.ign):s==="division"?Number(a.division)-Number(b.division)||byRank(a,b):byRank(a,b));return list}
+function renderRankings(){const root=$("tierGroups"),list=filteredPlayers();if(!list.length){root.innerHTML=players.filter(p=>p.published!==false).length?'<div class="empty">No players match those filters.</div>':'<div class="empty">No players have been placed on the tier list yet. Apply in the game to get tested.</div>';updateStats();return}
+ root.innerHTML=["S","A","B","C","U"].map(t=>{const members=list.filter(p=>p.tier===t);if(!members.length)return"";return `<section class="tier-row"><div class="tier-label tier-${t}">${t==="U"?"?":tierShort[t]}<small>${escapeHTML(tierNames[t])}</small></div><div class="players">${members.map(p=>`<button type="button" class="player" data-player="${escapeHTML(p.gameId)}" aria-label="View ${escapeHTML(p.ign)} profile"><span class="avatar">${escapeHTML(initials(p.ign))}</span><span class="pinfo"><span class="pname">${escapeHTML(p.ign)}${(p.badges||[]).includes("Verified")?' <span class="vt" title="Verified">✓</span>':""}</span><span class="pmeta">Div. ${escapeHTML(p.division)} · ${escapeHTML(p.device||"Device not set")}</span></span><span class="p-tier">${escapeHTML(tierShort[p.tier])}</span></button>`).join("")}</div></section>`}).join("");
+ root.querySelectorAll("[data-player]").forEach(el=>el.addEventListener("click",()=>showPlayer(el.dataset.player)));updateStats()}
+function renderChips(published){const cur=$("tierFilter").value,full={S:"High Tier",A:"Average Tier",B:"Mid Tier",C:"Low Tier",U:"Unranked"};const items=[["all","All",published.length]].concat(["S","A","B","C","U"].map(t=>[t,tierShort[t],published.filter(p=>p.tier===t).length]).filter(x=>x[0]!=="U"||x[2]>0||cur==="U"));$("tierChips").innerHTML=items.map(([k,l,n])=>`<button type="button" class="chip${cur===k?" on":""}" data-t="${k}" title="${escapeHTML(full[k]||"All tiers")}" aria-pressed="${cur===k}">${escapeHTML(l)}<i>${n}</i></button>`).join("")}
+$("tierChips").addEventListener("click",e=>{const b=e.target.closest("[data-t]");if(!b)return;$("tierFilter").value=b.dataset.t;renderRankings()});
+function updateStats(){const published=players.filter(p=>p.published!==false);renderChips(published);$("statPlayers").textContent=published.length;$("statDivisions").textContent=new Set(published.map(p=>String(p.division))).size;$("heroCount").innerHTML=String(published.length).padStart(2,"0")+' <span style="font-size:14px;color:#929bad;font-weight:700">players</span>';["S","A","B","C"].forEach(t=>{const n=published.filter(p=>p.tier===t).length;$("count"+t).textContent=n;$("bar"+t).style.width=(published.length?n/published.length*100:0)+"%"})}
+let currentPlayerId="";
+function openFromHash(){const m=location.hash.match(/^#player=(.+)$/);if(m){try{const id=decodeURIComponent(m[1]);if(players.some(p=>p.gameId===id))showPlayer(id)}catch(e){}}}
+function closePlayer(){$("playerModal").classList.add("hidden");try{if(location.hash.indexOf("#player=")===0)history.replaceState(null,"",location.pathname+location.search)}catch(e){}}
+function showPlayer(id){const p=players.find(x=>x.gameId===id);if(!p)return;$("modalTitle").textContent=p.ign;$("modalContent").innerHTML=`<p>Official tier: <b>${escapeHTML(tierNames[p.tier])}</b> — ${escapeHTML(tierDescriptions[p.tier])}</p><p>Game ID: <b>${escapeHTML(p.gameId)}</b></p><p>Division: <b>${escapeHTML(p.division)}</b></p><p>Device: <b>${escapeHTML(p.device||"Not specified")}</b></p>${extrasHTML(p)}`;$("playerModal").classList.remove("hidden");currentPlayerId=id;try{history.replaceState(null,"",location.pathname+location.search+"#player="+encodeURIComponent(id))}catch(e){}}
+
+/* ---- admin render ---- */
+function renderAdmin(){
+ const apps=$("applicationsList");
+ apps.innerHTML=applications.length?applications.map(a=>{return `<div class="rowline"><b style="font-size:12px">${escapeHTML(a.ign)}</b><div class="hint">ID: ${escapeHTML(a.gameId)} · Div. ${escapeHTML(a.division)} · ${escapeHTML(a.device)} · <b style="color:${a.status==="Pending"?"#ffd166":a.status==="Testing"?"#38bdf8":a.status==="Ranked"?"#35e6a1":"#ff718a"}">${escapeHTML(a.status)}</b></div>${a.achievements?`<div class="hint">${escapeHTML(a.experience||"")} — ${escapeHTML(a.achievements)}</div>`:""}<div class="admin-actions">${a.status==="Pending"?`<button class="btn btn-primary" data-test="${escapeHTML(a.id)}">Start tier test</button><button class="btn" data-reject="${escapeHTML(a.id)}">Reject</button>`:a.status==="Testing"?`<select class="field" data-tier-for="${escapeHTML(a.id)}" aria-label="Tier to place"><option value="S">High Tier (HT)</option><option value="A">Average Tier (AT)</option><option value="B">Mid Tier (MT)</option><option value="C">Low Tier (LT)</option></select><button class="btn btn-primary" data-place="${escapeHTML(a.id)}">Place in tier</button><button class="btn" data-reject="${escapeHTML(a.id)}">Reject</button>`:""}<button class="btn" data-delete-app="${escapeHTML(a.id)}">Delete</button></div></div>`}).join(""):'<div class="empty">No applications on this browser yet.</div>';
+ apps.querySelectorAll("[data-test]").forEach(b=>b.onclick=()=>changeApp(b.dataset.test,"Testing"));
+ apps.querySelectorAll("[data-place]").forEach(b=>b.onclick=()=>{const sel=apps.querySelector('[data-tier-for="'+b.dataset.place+'"]');placeApp(b.dataset.place,sel?sel.value:"U")});
+ const cnt=$("appCounts");if(cnt)cnt.textContent="Pending: "+applications.filter(a=>a.status==="Pending").length+" · Testing: "+applications.filter(a=>a.status==="Testing").length+" · Ranked: "+applications.filter(a=>a.status==="Ranked").length;
+ apps.querySelectorAll("[data-reject]").forEach(b=>b.onclick=()=>changeApp(b.dataset.reject,"Rejected"));
+ apps.querySelectorAll("[data-delete-app]").forEach(b=>b.onclick=()=>{applications=applications.filter(a=>a.id!==b.dataset.deleteApp);save();renderAll()});
+ const ap=$("adminPlayers");
+ ap.innerHTML=players.length?players.map(p=>`<div style="display:flex;align-items:center;justify-content:space-between;gap:8px;border-top:1px solid #33303a;padding:9px 0"><span style="font-size:11px"><b>${escapeHTML(p.ign)}</b><span class="hint"> · ${escapeHTML(p.gameId)} · Div. ${escapeHTML(p.division)} · ${escapeHTML(tierNames[p.tier])}</span></span><span class="admin-actions" style="margin:0"><button class="btn" data-edit="${escapeHTML(p.gameId)}">Edit</button><button class="btn btn-danger" data-remove="${escapeHTML(p.gameId)}">Remove</button></span></div>`).join(""):'<div class="empty">No player records.</div>';
+ ap.querySelectorAll("[data-remove]").forEach(b=>b.onclick=()=>{if(twoStep(b,"Click again to remove")){players=players.filter(p=>p.gameId!==b.dataset.remove);save();renderAll();notify("Player removed.")}});
+ ap.querySelectorAll("[data-edit]").forEach(b=>b.onclick=()=>{const p=players.find(x=>x.gameId===b.dataset.edit);if(!p)return;$("adminIgn").value=p.ign;$("adminId").value=p.gameId;$("adminDivision").value=String(p.division);$("adminTier").value=p.tier;$("adminDevice").value=p.device||"";$("adminTester").value=p.tester||"";$("adminWins").value=p.wins||"";$("adminTotal").value=p.total||"";$("adminDate").value=p.testedOn||"";$("adminPrev").value=p.prevTier||"";document.querySelectorAll("#adminBadges input").forEach(i=>i.checked=(p.badges||[]).includes(i.value));$("adminIgn").scrollIntoView({behavior:"smooth",block:"center"})});
+ $("rosterSource").textContent="Currently showing: "+rosterFrom+". Visitors see the published roster.json (or the sample roster if there is none).";
+}
+function renderAll(){renderUpdates();renderRankings();renderAdmin()}
+function placeApp(id,tier){const a=applications.find(x=>x.id===id);if(!a||!(tier in tierOrder))return;const today=new Date().toISOString().slice(0,10),tester=(CONFIG.contact&&CONFIG.contact.ign)||"";const ex=players.find(p=>p.gameId.toLowerCase()===a.gameId.toLowerCase());if(ex){ex.prevTier=ex.tier!==tier&&ex.tier!=="U"?ex.tier:ex.prevTier||"";ex.tier=tier;ex.testedOn=today;if(tester)ex.tester=tester;ex.published=true}else players.push({ign:a.ign,gameId:a.gameId,division:String(a.division),device:a.device,tier,published:true,tester,wins:0,total:0,testedOn:today,prevTier:"",badges:[]});a.status="Ranked";save();renderAll();notify(a.ign+" placed in "+tierNames[tier]+". Export the roster to publish it.")}
+function changeApp(id,status){const a=applications.find(x=>x.id===id);if(a){a.status=status;save();renderAll();notify("Application marked "+status.toLowerCase()+".")}}
+
+/* ---- filters ---- */
+["searchBar","divisionFilter","tierFilter","sortFilter"].forEach(id=>$(id).addEventListener(id==="searchBar"?"input":"change",renderRankings));
+
+/* ---- application form ---- */
+$("appForm").addEventListener("submit",async e=>{
+ e.preventDefault();
+ if($("hp").value)return; // honeypot: bots fill this
+ const ign=$("ign").value.trim(),gameId=$("gameId").value.trim(),division=$("division").value,device=$("device").value,experience=$("experience").value,achievements=$("achievements").value.trim();
+ if(!ign||!gameId||!achievements)return notify("Please complete every field.",true);
+ if(achievements.length<10)return notify("Tell us a little more about your PvP experience (at least 10 characters).",true);
+ if(!$("agree").checked)return notify("You must accept the testing rules to apply.",true);
+ const last=Number(localStorage.getItem("cnr_last_submit")||0);if(Date.now()-last<20000)return notify("Please wait a few seconds before submitting again.",true);
+ if(players.some(p=>p.gameId.toLowerCase()===gameId.toLowerCase())||applications.some(a=>a.gameId.toLowerCase()===gameId.toLowerCase()&&a.status==="Pending"))return notify("That game ID is already ranked or has a pending application.",true);
+ const rec={id:"app-"+Date.now()+"-"+Math.random().toString(36).slice(2,7),ign,gameId,division,device,experience,achievements,status:"Pending",createdAt:new Date().toISOString()};
+ const btn=$("appSubmit");
+ if(CONFIG.applyEndpoint){
+  btn.disabled=true;btn.textContent="Sending…";
+  try{
+   const r=await fetch(CONFIG.applyEndpoint,{method:"POST",headers:{"Content-Type":"application/json","Accept":"application/json"},body:JSON.stringify({ign,gameId,division,device,experience,achievements,submittedAt:rec.createdAt})});
+   if(!r.ok)throw new Error("HTTP "+r.status);
+  }catch(err){btn.disabled=false;btn.textContent="Submit application ↗";return notify("Could not send your application. Check your connection and try again.",true)}
+  btn.disabled=false;btn.textContent="Submit application ↗";
+ }
+ try{localStorage.setItem("cnr_last_submit",String(Date.now()))}catch(_){}
+ applications.unshift(rec);save();e.target.reset();renderAll();
+ notify(CONFIG.applyEndpoint?"Application received. Please wait for the CNR testers to contact you. Your tier is decided after your test.":"Saved on this browser as Pending (not sent to staff).");
+});
+
+/* ---- admin gate ---- */
+async function sha256(text){if(!(window.crypto&&crypto.subtle))throw new Error("no-crypto");const buf=await crypto.subtle.digest("SHA-256",new TextEncoder().encode(text));return Array.from(new Uint8Array(buf)).map(b=>b.toString(16).padStart(2,"0")).join("")}
+function isUnlocked(){try{return sessionStorage.getItem(SESSION_KEY)==="1"}catch(e){return false}}
+function openAdminPanel(){$("adminPanel").classList.remove("hidden");renderAdmin();$("adminPanel").scrollIntoView({behavior:"smooth",block:"start"})}
+$("adminOpen").addEventListener("click",()=>{
+ if(isUnlocked()){$("adminPanel").classList.contains("hidden")?openAdminPanel():$("adminPanel").classList.add("hidden")}
+ else{$("authModal").classList.remove("hidden");setTimeout(()=>$("authPass").focus(),30)}
+});
+$("authCancel").addEventListener("click",()=>{$("authModal").classList.add("hidden");$("authPass").value=""});
+let failedTries=0;
+$("authForm").addEventListener("submit",async e=>{
+ e.preventDefault();
+ if(failedTries>=5)return notify("Too many attempts. Reload the page to try again.",true);
+ try{
+  const h=await sha256($("authPass").value);
+  if(h===CONFIG.adminHash){try{sessionStorage.setItem(SESSION_KEY,"1")}catch(_){}failedTries=0;$("authPass").value="";$("authModal").classList.add("hidden");openAdminPanel()}
+  else{failedTries++;$("authPass").value="";notify("Wrong passcode.",true)}
+ }catch(err){notify("Admin needs a secure (https) page to check the passcode.",true)}
+});
+$("adminLock").addEventListener("click",()=>{try{sessionStorage.removeItem(SESSION_KEY)}catch(_){}$("adminPanel").classList.add("hidden");notify("Admin locked.")});
+$("adminClose").addEventListener("click",()=>$("adminPanel").classList.add("hidden"));
+
+/* ---- admin actions ---- */
+$("manualAppForm").addEventListener("submit",e=>{e.preventDefault();if(!isUnlocked())return;const ign=$("maIgn").value.trim(),gameId=$("maId").value.trim();if(!ign||!gameId)return notify("IGN and game ID are required.",true);if(players.some(p=>p.gameId.toLowerCase()===gameId.toLowerCase())||applications.some(a=>a.gameId.toLowerCase()===gameId.toLowerCase()&&(a.status==="Pending"||a.status==="Testing")))return notify("That game ID is already ranked or in the list.",true);applications.unshift({id:"app-"+Date.now()+"-"+Math.random().toString(36).slice(2,7),ign,gameId,division:$("maDiv").value,device:$("maDev").value,experience:"",achievements:$("maNote").value.trim(),status:"Pending",createdAt:new Date().toISOString()});save();e.target.reset();renderAll();notify(ign+" added as Pending.")});
+$("playerForm").addEventListener("submit",e=>{e.preventDefault();if(!isUnlocked())return;const ign=$("adminIgn").value.trim(),gameId=$("adminId").value.trim(),division=$("adminDivision").value,tier=$("adminTier").value,device=$("adminDevice").value.trim()||"Not specified",extra=readExtra();if(!ign||!gameId)return notify("IGN and game ID are required.",true);if(extra.wins>extra.total)return notify("Test wins cannot be higher than matches played.",true);const existing=players.find(p=>p.gameId.toLowerCase()===gameId.toLowerCase());if(existing)Object.assign(existing,{ign,division,tier,device,published:true,...extra});else players.push({ign,gameId,division,tier,device,published:true,...extra});save();e.target.reset();$("adminDevice").value="Android";renderAll();notify("Player saved. Export roster.json to publish.")});
+$("exportRoster").addEventListener("click",()=>{if(!isUnlocked())return;const json=JSON.stringify(players,null,2),box=$("exportBox");box.value=json;box.classList.remove("hidden");$("copyRoster").classList.remove("hidden");box.focus();box.select();try{const blob=new Blob([json],{type:"application/json"});const a=document.createElement("a");a.href=URL.createObjectURL(blob);a.download="roster.json";document.body.appendChild(a);a.click();a.remove();setTimeout(()=>URL.revokeObjectURL(a.href),1000)}catch(e){}notify("Roster ready below. Copy it, or use the downloaded roster.json.")});
+$("copyRoster").addEventListener("click",()=>{const box=$("exportBox");box.select();(navigator.clipboard?navigator.clipboard.writeText(box.value):Promise.reject()).then(()=>notify("Roster copied."),()=>{box.select();notify("Press Ctrl+C to copy the selected text.",true)})});
+$("importRosterBtn").addEventListener("click",()=>$("importRoster").click());
+$("importRoster").addEventListener("change",async e=>{const f=e.target.files[0];e.target.value="";if(!f||!isUnlocked())return;try{const d=JSON.parse(await f.text());if(!Array.isArray(d)||!d.every(validPlayer))throw new Error("bad");players=d.map(mapP);save();renderAll();notify("Roster imported ("+players.length+" players).")}catch(err){notify("That file is not a valid roster.json.",true)}});
+$("resetLocal").addEventListener("click",()=>{if(!isUnlocked())return;if(twoStep($("resetLocal"),"Click again to discard")){try{localStorage.removeItem(STORAGE_KEY);localStorage.removeItem(APP_KEY)}catch(_){}hasLocal=false;applications=[];players=clone(initialPlayers);rosterFrom="built-in sample roster";loadPublished(true);renderAll();notify("Local edits discarded.")}});
+
+/* ---- modals ---- */
+$("modalClose").addEventListener("click",closePlayer);
+if($("modalCopy"))$("modalCopy").addEventListener("click",()=>{const url=location.href;(navigator.clipboard?navigator.clipboard.writeText(url):Promise.reject()).then(()=>notify("Profile link copied."),()=>notify("Copy failed. Link: "+url,true))});
+$("playerModal").addEventListener("click",e=>{if(e.target.id==="playerModal")closePlayer()});
+$("authModal").addEventListener("click",e=>{if(e.target.id==="authModal")e.currentTarget.classList.add("hidden")});
+document.addEventListener("keydown",e=>{if(e.key==="Escape"){closePlayer();$("authModal").classList.add("hidden")}});
+
+/* ---- published roster (roster.json next to this page) ---- */
+function loadPublished(force){
+ if(hasLocal&&!force)return;
+ fetch("roster.json",{cache:"no-store"}).then(r=>r.ok?r.json():null).then(d=>{if(Array.isArray(d)&&d.every(validPlayer)){players=d.map(mapP);rosterFrom="published roster.json";renderAll();openFromHash()}}).catch(()=>{});
+}
+$("year").textContent=new Date().getFullYear();
+renderAll();
+openFromHash();
+loadPublished(false);
+(function(){const b=$("toTop");window.addEventListener("scroll",()=>b.classList.toggle("hidden",window.scrollY<700),{passive:true});b.addEventListener("click",()=>window.scrollTo({top:0,behavior:"smooth"}))})();
+</script>
+</body>
+</html>
