@@ -18,15 +18,15 @@
     "ign": "Zephyr",
     "gameId": "817627292",
     "division": "3",
-    "device": "Not specified",
+    "device": "PC",
     "tier": "S",
     "published": true,
-    "tester": "",
+    "tester": "Pubg",
     "wins": 0,
-    "total": 0,
-    "testedOn": "",
+    "total": 3,
+    "testedOn": "2026-10-15",
     "prevTier": "",
-    "badges": []
+    "badges": ["Verified"]
   }, 
   {
     "ign": "ZeroReason",
