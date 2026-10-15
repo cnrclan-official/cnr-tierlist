@@ -15,22 +15,4 @@
       "Verified"
     ]
   }
-]
-[
-  {
-    "ign": "Zephyr",
-    "gameId": "927272827",
-    "division": "3",
-    "tier": "S",
-    "device": "Android",
-    "published": true,
-    "tester": "Pubg",
-    "wins": 0,
-    "total": 3,
-    "testedOn": "2026-10-15",
-    "prevTier": "",
-    "badges": [
-      "Verified"
-    ]
-  }
-]
+] 
