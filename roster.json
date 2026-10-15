@@ -1,104 +1,86 @@
 [
-  {
-    "ign": "Lalalalalalala",
-    "gameId": "927272827",
-    "division": "3",
-    "tier": "S",
-    "device": "Android",
-    "published": true,
-    "tester": "Pubg",
-    "wins": 0,
-    "total": 3,
-    "testedOn": "2026-10-15",
-    "prevTier": "",
-    "badges": [
-      "Verified"
-    ]
-  }, 
-]
-[
-  {
-    "ign": "ConqurAizen-Dead",
-    "gameId": "2722445694",
-    "division": "3",
-    "device": "PC",
-    "tier": "C",
-    "published": true,
-    "tester": "Pubg",
-    "wins": 0,
-    "total": 0,
-    "testedOn": "2026-10-15",
-    "prevTier": "",
-    "badges": [
-      "Verified",
-      "Division Founder"
-    ]
-  },
-  {
-    "ign": "DingdongConquers",
-    "gameId": "2973471966",
-    "division": "3",
-    "device": "Android",
-    "tier": "B",
-    "published": true,
-    "tester": "Pubg",
-    "wins": 0,
-    "total": 0,
-    "testedOn": "2026-10-15",
-    "prevTier": "",
-    "badges": [
-      "Verified",
-      "Division Founder"
-    ]
-  },
-  {
-    "ign": "MGfloppishHA-VOC",
-    "gameId": "2894361102",
-    "division": "3",
-    "device": "Android",
-    "tier": "S",
-    "published": true,
-    "tester": "Pubg",
-    "wins": 0,
-    "total": 0,
-    "testedOn": "2026-10-15",
-    "prevTier": "",
-    "badges": [
-      "Verified",
-      "Undefeated Test"
-    ]
-  },
-  {
-    "ign": "&&&Luna",
-    "gameId": "2957414078",
-    "division": "3",
-    "device": "Android",
-    "tier": "A",
-    "published": true,
-    "tester": "Pubg",
-    "wins": 0,
-    "total": 0,
-    "testedOn": "2026-10-15",
-    "prevTier": "",
-    "badges": [
-      "Verified"
-    ]
-  },
-  {
-    "ign": "zekari.exe",
-    "gameId": "2620556576",
-    "division": "3",
-    "device": "PC",
-    "tier": "S",
-    "published": true,
-    "tester": "Pubg",
-    "wins": 0,
-    "total": 0,
-    "testedOn": "2026-10-15",
-    "prevTier": "",
-    "badges": [
-      "Verified",
-      "Undefeated Test"
-    ]
-  }
+{
+"ign": "Lalalalalalala",
+"gameId": "927272827",
+"division": "3",
+"tier": "S",
+"device": "Android",
+"published": true,
+"tester": "Pubg",
+"wins": 0,
+"total": 3,
+"testedOn": "2026-10-15",
+"prevTier": "",
+"badges": ["Verified"]
+},
+{
+"ign": "ConqurAizen-Dead",
+"gameId": "2722445694",
+"division": "3",
+"device": "PC",
+"tier": "C",
+"published": true,
+"tester": "Pubg",
+"wins": 0,
+"total": 0,
+"testedOn": "2026-10-15",
+"prevTier": "",
+"badges": ["Verified", "Division Founder"]
+},
+{
+"ign": "DingdongConquers",
+"gameId": "2973471966",
+"division": "3",
+"device": "Android",
+"tier": "B",
+"published": true,
+"tester": "Pubg",
+"wins": 0,
+"total": 0,
+"testedOn": "2026-10-15",
+"prevTier": "",
+"badges": ["Verified", "Division Founder"]
+},
+{
+"ign": "MGfloppishHA-VOC",
+"gameId": "2894361102",
+"division": "3",
+"device": "Android",
+"tier": "S",
+"published": true,
+"tester": "Pubg",
+"wins": 0,
+"total": 0,
+"testedOn": "2026-10-15",
+"prevTier": "",
+"badges": ["Verified", "Undefeated Test"]
+},
+{
+"ign": "&&&Luna",
+"gameId": "2957414078",
+"division": "3",
+"device": "Android",
+"tier": "A",
+"published": true,
+"tester": "Pubg",
+"wins": 0,
+"total": 0,
+"testedOn": "2026-10-15",
+"prevTier": "",
+"badges": ["Verified"]
+},
+{
+"ign": "zekari.exe",
+"gameId": "2620556576",
+"division": "3",
+"device": "PC",
+"tier": "S",
+"published": true,
+"tester": "Pubg",
+"wins": 0,
+"total": 0,
+"testedOn": "2026-10-15",
+"prevTier": "",
+"badges": ["Verified", "Undefeated Test"]
+}
 ]
